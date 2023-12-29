@@ -6,7 +6,8 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome import service as fs
 from selenium.webdriver import ChromeOptions
-from webdriver_manager.core.utils import ChromeType
+# from webdriver_manager.core.utils import ChromeType
+from webdriver_manager.core.os_manager import ChromeType
 from selenium.webdriver.common.by import By
 
 # タイトルを設定
@@ -29,7 +30,7 @@ if press_button:
     options.add_argument('--disable-dev-shm-usage')
 
     # webdriver_managerによりドライバーをインストール
-　  # chromiumを使用したいのでchrome_type引数でchromiumを指定しておく
+    # chromiumを使用したいのでchrome_type引数でchromiumを指定しておく
     CHROMEDRIVER = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
     service = fs.Service(CHROMEDRIVER)
     driver = webdriver.Chrome(
