@@ -1,0 +1,2 @@
+# streamlit/selenium/streamlit_selenium_sample/main_app/app.py用
+chromium
