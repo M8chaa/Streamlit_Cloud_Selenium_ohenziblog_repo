@@ -10,6 +10,26 @@ from selenium.webdriver import ChromeOptions
 from webdriver_manager.core.os_manager import ChromeType
 from selenium.webdriver.common.by import By
 
+st.set_page_config(
+    page_title="FullstackGPT Home",
+    page_icon="🤖",
+)
+
+st.markdown(
+    """
+# Welcome to QUUS AI projects!
+            
+Here are the apps we proudly present:
+            
+- [x] [📃 Document AI](/DocumentAI)
+- [x] [🔒 Local AI](/LocalAI)
+- [x] [❓ Quiz AI](/QuizAI)
+- [x] [🖥️ Crawling AI](/CrawlingAI)
+- [x] [💼 Meeting AI](/MeetingAI)
+- [x] [📈 Investor AI](/InvestorAI)
+"""
+)
+
 # タイトルを設定
 st.title("seleniumテストアプリ")
 
